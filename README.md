@@ -71,8 +71,8 @@ mongo mongodb://127.0.0.1:27017/brewery
 
 3. Set agent logs to DEBUG on system and provide a copy of agent logs
 
-4. Add a SSO (SAML) Connector in the JumpCloud Admin Console  
-*Note: You may choose the web-based application of your choice but many applications/services provide free trials and will allow enabling of SAML authentication. For example: Salesforce (Trailhead) or ThousandEyes allow for SAML configurations with free trial accounts.*. 
-   - Configure the SAML authentication on the chosen app/service-side
-   - Validate one of your users created in Task 1 can login to the application through the user’s JumpCloud portal
-   - Create and provide a HAR file of the SAML request
+4. Configure LDAP for your organization in the JumpCloud Admin Portal  
+   - Add two user groups to your LDAP directory, each user group containing at least 2 unique users
+   - Using a **seperate** BindDN user query your LDAP directory over SSL using 'ldapsearch' and show:
+     1.) All users bound to LDAP in your organization
+     2.) Just the users in one specifc user group (your choice of the two groups you created) and only returning the users email, firstname, and lastname
