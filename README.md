@@ -50,29 +50,36 @@ mongo mongodb://127.0.0.1:27017/brewery
   - We’re coming out with a new hoppy delicious IPA. To let our customers know, we need two mailing lists.
     - One that includes the email addresses of all of our customers
     - Another that includes only the email addresses for customers whose favorite beer is an IPA.
-  - We need to gather some data on our tap rooms to show which is the most popular location. We need to know how many customers have frequented each location between 1/1/2021 - 4/1/2021.
+  - We need to gather some data on our tap rooms to show which is the most popular location. We need to know how many customers have frequented each location between 1/1/2024 - 4/1/2024.
   - We’re trying to determine what type of beer is most popular with our customers so we can determine what our next experimental beer should be! Can you provide us with an array of objects that include the beer name, type, and number of customers where that beer is their favorite?
 2. Provide the output results for each of these requests.
 
 ## Part 2: Interacting with JumpCloud
 
 ### Prerequisites
-1. Create a free JumpCloud Organization: https://console.jumpcloud.com/signup
+1. Create a free JumpCloud Organization - You will receive access to a free JumpCloud account for assignment purposes:
+  - JumpCloud will send you a link to sign up for an account, you won’t have to reach out to anyone to get set up with an organization
+  - JumpCloud will have full access to your testing environment
+  - Once you receive the email (Subject Line: JumpCloud Administrator Account Setup) notifying you that you’ve been made an administrator on a JumpCloud account, you have one hour to reset your password before it times out. Please take care of this in the window allotted to you 
+   - If you miss this window, please email recruiting@jumpcloud.com
+
 2. Install the JumpCloud Agent on a system (Mac, Windows, or Linux)
 
 ### Assignment
 1. Using the programming language of your choice (Go or JavaScript preferred), complete the following and provide your solution for each:
-   - Create and activate 2 Users
-   - Create a Group of Users
-   - Associate Users to the Group of Users
-   - Associate one User to the recently added system in JumpCloud
+  - Create and activate 2 Users
+  - Create a Group of Users
+  - Associate Users to the Group of Users
+  - Associate one User to the recently added system in JumpCloud
 
 2. Log in to the system as the JumpCloud managed user
 
-3. Set agent logs to DEBUG on system and provide a copy of agent logs
+3. Set agent logs to DEBUG on your system and provide a copy of the agent logs
 
 4. Configure LDAP for your organization in the JumpCloud Admin Portal  
-   - Add two user groups to your LDAP directory, each user group containing at least 2 unique users
-   - Using a **seperate** BindDN user query your LDAP directory over SSL using 'ldapsearch' and show:
-     1.) All users bound to LDAP in your organization
-     2.) Just the users in one specifc user group (your choice of the two groups you created) and only returning the users email, firstname, and lastname
+  - Add two user groups to your LDAP directory, each user group containing at least 2 unique users
+  - Using a **seperate** BindDN user query your LDAP directory over SSL using 'ldapsearch' and show:
+
+    1.) All users bound to LDAP in your organization
+
+    2.) Just the users in one specifc user group (your choice of the two groups you created) and only returning the users email, firstname, and lastname
